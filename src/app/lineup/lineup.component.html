@@ -1,6 +1,13 @@
 <h2>Lineup</h2>
-<div *ngFor="let player of players | async" (click)="goToDetailPage(player)" class="panel panel-default">
+<div *ngFor="let player of players | async" class="panel panel-default">
   <div class="panel-body">
-  <h3>{{player.name}} Position: <em>{{player.position}}</em></h3>
+  <h3 (click)="goToDetailPage(player)">{{player.name}} Position: <em>{{player.position}}</em></h3>
+  <div *ngIf="currentRoute === '/admin'">
+    {{player.bio}}
+    <hr>
+  <img src="{{player.image}}">
+    <hr>
+    <app-edit-player [selectedPlayer]="player"></app-edit-player>
+</div>
 </div>
 </div>

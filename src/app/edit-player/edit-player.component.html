@@ -1,0 +1,23 @@
+<h4>Edit Player Details:</h4>
+
+<label>Player Name:</label>
+<input [(ngModel)]="selectedPlayer.name">
+<br>
+
+<label>Player Position: Infield, Outfield, or Pitcher</label>
+<input [(ngModel)]="selectedPlayer.position">
+<br>
+
+<label>Player Average:</label>
+<input [(ngModel)]="selectedPlayer.battingAverage">
+<br>
+
+<label> Player Bio:</label>
+<input [(ngModel)]="selectedPlayer.bio">
+<br>
+
+<label>Player Image:</label>
+<input [(ngModel)]="selectedPlayer.image">
+
+<button class="btn btn-warning" (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+<button class="btn btn-danger" (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>

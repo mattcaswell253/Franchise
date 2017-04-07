@@ -22,4 +22,19 @@ getPlayerById(playerId: string){
   return this.angularFire.database.object('players/' + playerId);
 }
 
+updatePlayer(localUpdatedPlayer){
+    var albumEntryInFirebase = this.getPlayerById(localUpdatedPlayer.$key);
+    albumEntryInFirebase.update({name: localUpdatedPlayer.name,
+                                position: localUpdatedPlayer.position,
+                                average: localUpdatedPlayer.battingAverage,
+                                bio: localUpdatedPlayer.bio,
+                                image: localUpdatedPlayer.image,
+                              });
+  }
+
+  deletePlayer(localPlayerToDelete){
+    var playerEntryInFirebase = this.getPlayerById(localPlayerToDelete.$key);
+    playerEntryInFirebase.remove();
+  }
+
 }
