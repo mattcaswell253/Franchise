@@ -1,0 +1,20 @@
+{ "players": [{
+    "name": "Ichiro Suziki",
+    "position": "Outfield",
+    "battingAverage": ".353",
+    "bio": "Ichiro has established a number of batting records, including MLB's single-season record for hits with 262. He had 10 consecutive 200-hit seasons, the longest streak by any player in history",
+    "id": "1"
+}, {
+  "name": "David Ortiz",
+  "position": "Infield/DH",
+  "battingAverage": ".286",
+  "bio": "Ortiz was a ten-time All-Star, a three-time World Series champion, seven-time Silver Slugger winner, and he holds the Red Sox single-season record for home runs with 54, set during the 2006 season.",
+  "id": "2"
+}, {
+  "name": "Randy Johnson",
+  "position": "Pitcher",
+  "battingAverage": "Era: 3.2",
+  "bio": "Randy was the man.",
+  "id": "3"
+}
+  ]}
