@@ -1,0 +1,20 @@
+{
+  "name": "franchise",
+  "description": "",
+  "main": "",
+  "authors": [
+    "mattcaswell <matthewcaswell253@Gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
