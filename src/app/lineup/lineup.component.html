@@ -6,12 +6,12 @@
      <option value="outfield">Outfield</option>
      <option value="pitcher">Pitcher</option>
    </select>
-   
+
 
 
 
 <div *ngFor="let player of players | async | position:filterByPosition " class="panel panel-default">
-  <div class="panel-body">
+  <div class=" player panel-body">
   <h3 (click)="goToDetailPage(player)">{{player.name}} Position: <em>{{player.position}}</em></h3>
   <div *ngIf="currentRoute === '/admin'">
     {{player.bio}}

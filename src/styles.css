@@ -5,5 +5,16 @@
   height: 30px;
   background-color: #f5f5f5;
   padding: 10px;
+}
 
+body {
+  background-image: url("http://content.sportslogos.net/news/2015/01/Seattle-Mariners.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+html {
+  color: red;
 }

@@ -1,0 +1,12 @@
+h2 {
+  color: red;
+}
+
+.panel {
+ background-color: rgba(0, 0, 0, .9);
+ text-align: center;
+ border: 2px solid red;
+ border-radius: 10px;
+ color: red;
+ font-size: 20px;
+}
