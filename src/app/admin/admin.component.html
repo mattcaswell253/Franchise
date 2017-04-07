@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Player to Dynasty</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Player Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Player Position:</label>
+        <br>
+        <input #newPosition>
+      </div>
+
+      <div>
+        <label>Batting Average:</label>
+        <br>
+        <input #newBattingAverage>
+      </div>
+
+      <div>
+        <label>Bio:</label>
+        <br>
+        <textarea #newBio></textarea>
+      </div>
+
+      <button (click)="submitForm(newName.value, newPosition.value, newBattingAverage.value, newBio.value); newName.value=''; newPosition.value=''; newBattingAverage.value=''; newBio.value=''">Add</button>
+
+
+    </div>
+  </div>
+</div>
