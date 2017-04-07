@@ -1,5 +1,16 @@
 <h2>Lineup</h2>
-<div *ngFor="let player of players | async" class="panel panel-default">
+
+<select (change)="onChange($event.target.value)">
+     <option value="AllPlayers" selected="selected">All Players</option>
+     <option value="infield">Infield</option>
+     <option value="outfield">Outfield</option>
+     <option value="pitcher">Pitcher</option>
+   </select>
+   
+
+
+
+<div *ngFor="let player of players | async | position:filterByPosition " class="panel panel-default">
   <div class="panel-body">
   <h3 (click)="goToDetailPage(player)">{{player.name}} Position: <em>{{player.position}}</em></h3>
   <div *ngIf="currentRoute === '/admin'">
