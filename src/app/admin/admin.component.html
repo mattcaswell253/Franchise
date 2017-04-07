@@ -13,7 +13,11 @@
       <div>
         <label>Player Position:</label>
         <br>
-        <input #newPosition>
+        <select>
+          <option #newPosition>Infield</option>
+          <option #newPosition>Outfield</option>
+          <option #newPosition>Pitcher</option>
+        </select>
       </div>
 
       <div>
@@ -28,7 +32,16 @@
         <textarea #newBio></textarea>
       </div>
 
-      <button (click)="submitForm(newName.value, newPosition.value, newBattingAverage.value, newBio.value); newName.value=''; newPosition.value=''; newBattingAverage.value=''; newBio.value=''">Add</button>
+      <div>
+        <label>Player Image:</label>
+        <br>
+        <input #newImage>
+      </div>
+      <br>
+
+
+
+      <button (click)="submitForm(newName.value, newPosition.value, newBattingAverage.value, newBio.value, newImage.value); newName.value=''; newPosition.value=''; newBattingAverage.value=''; newBio.value=''; newImage.value=''">Add</button>
 
 
     </div>

@@ -15,8 +15,8 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, position: string, battingAverage: string, bio: string) {
-    var newPlayer: Player = new Player(name, position, battingAverage, bio);
+  submitForm(name: string, position: string, battingAverage: string, bio: string, image: string) {
+    var newPlayer: Player = new Player(name, position, battingAverage, bio, image);
     this.playerService.addPlayer(newPlayer);
   }
 
